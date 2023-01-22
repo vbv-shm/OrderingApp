@@ -6,7 +6,7 @@ body{
 } */
 #header{
     width:500px;
-    height:200px;
+    height:150px;
     background-image: url("burger.jpg");
     background-size: 100% 100%;
     margin: auto;
@@ -21,4 +21,40 @@ body{
     padding: 20px;
     padding-top: 0px;
     font-size: 20px;
+}
+.parent-list{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 500px;
+    justify-content: space-between;
+    border-bottom: solid;
+    border-color: grey;
+}
+.items{
+
+}
+.text-list{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    
+}
+.item-image{
+    margin-left: 10px;
+    width:50px
+}
+.item-text{
+    /* padding-left: 10px;  */
+    /* padding-right: 10px; */
+    margin-left: -100px;
+    width:200px;
+    /* margin-top: -10px; */
+}
+.list-add-btn{
+    margin-right: 10px;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
 }
