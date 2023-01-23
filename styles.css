@@ -6,13 +6,14 @@ body{
 } */
 #header{
     width:500px;
-    height:150px;
+    height:120px;
     background-image: url("burger.jpg");
     background-size: 100% 100%;
     margin: auto;
 }
 #header-text{
-    color: aliceblue;
+    color: #ffffff;
+    font-weight: 600;
     padding: 20px;
     font-size: 40px;
 }
@@ -25,7 +26,7 @@ body{
 .parent-list{
     display: flex;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     width: 500px;
     justify-content: space-between;
     border-bottom: solid;
@@ -57,4 +58,63 @@ body{
     width:30px;
     height:30px;
     border-radius: 50%;
+    border-width: 1px;
+    margin-top: 5px;
+}
+.list-add-btn:hover{
+    background-color: rgb(248, 247, 154);
+}
+.item1{
+    font-weight: 1000;
+    font-size: 25px;
+}
+.item2{
+    font-weight: 500;
+    font-size: 15px;
+    font-style: italic;
+    color: grey;
+}
+.item3{
+    font-weight: 600;
+}
+
+#order-cart{  
+    width:500px;
+    /* text-align: center; */
+    margin-left: 70px;
+    display: none;
+    font-weight: 600;
+    font-size: large;
+    
+}
+.order-list-cart{
+    display: flex;
+    justify-content:space-between    ;
+}
+#ordered-total{
+    margin-left: 0px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#order-heading{
+    padding-left: 130px;
+    margin-bottom: 10px;
+    
+}
+#total-price{
+    margin-right: 130px;
+}
+.order-item{
+    width:30px;
+}
+#order-btn{
+    width:400px;
+    height: 50px;
+    background-color: rgb(101, 231, 101);
+    color: #ffffff;
+    border-width: 0px;
+    margin-left: -20px;
+    font-size: 16px;
+    margin-top: 10px;
 }
