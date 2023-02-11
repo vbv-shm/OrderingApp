@@ -12,6 +12,15 @@ document.body.addEventListener("click",(e)=>{
             if(itemData.id==e.target.dataset.btn){
                 console.log(e.target.dataset.btn)
                 addToOrderList(itemData)
+            }    
+        })
+    }
+    if(e.target.dataset.name){
+        itemsInCart.map(function(itemdata){
+            if(itemdata.name===e.target.dataset.name){
+                itemdata.count=0
+                itemdata.totalPrice=0
+                displayCart()
             }
         })
     }
@@ -30,7 +39,7 @@ function addToOrderList(itemData){
 }
 
 function displayCart(){
-    const orderedItems=document.getElementById("ordered-items")
+    
     let listDetail=""
     let totalCount=0
     let totalAllPrice=0
@@ -38,7 +47,9 @@ function displayCart(){
         if(data.count>0){
             listDetail+=`
                 <div class="order-list-cart">
-                    <div class="order-item">${data.name}</div>
+                    <div class="order-item">${data.name}
+                        <div class="remove-btn" data-name="${data.name}">remove</div>
+                    </div>
                     <div class="order-item">${data.count}</div>
                     <div class="order-item">$${data.totalPrice}</div>
                     <div></div>
@@ -48,7 +59,7 @@ function displayCart(){
         totalAllPrice+=Number(data.totalPrice)
         }  
     })
-    orderedItems.innerHTML=listDetail
+    
     if(totalCount>0){
         document.getElementById("order-cart").style.display="block"
         document.getElementById("total-price").innerText=`$${totalAllPrice}`
@@ -56,9 +67,15 @@ function displayCart(){
     else{
         document.getElementById("order-cart").style.display="none"
     }
+    renderOrderlist(listDetail)
 }
-
-
+function renderOrderlist(listDetail){
+    const orderedItems=document.getElementById("ordered-items")
+    orderedItems.innerHTML=listDetail
+}
+function removeFromCart(){
+    
+}  
 
 
 function render(){

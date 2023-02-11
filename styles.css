@@ -25,7 +25,7 @@ body{
 }
 .parent-list{
     display: flex;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
     width: 500px;
     justify-content: space-between;
@@ -104,11 +104,12 @@ body{
 }
 #total-price{
     margin-right: 130px;
+    font-size: 25px;
 }
 .order-item{
-    width:30px;
+    width:40px;
 }
-#order-btn{
+#border-btn{
     width:400px;
     height: 50px;
     background-color: rgb(101, 231, 101);
@@ -117,4 +118,11 @@ body{
     margin-left: -20px;
     font-size: 16px;
     margin-top: 10px;
+}
+.remove-btn{
+    font-size: 10px;
+    position:relative;
+    color: blue;
+    left:402px;
+    top:-13px
 }
