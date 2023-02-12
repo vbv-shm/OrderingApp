@@ -24,6 +24,8 @@ document.body.addEventListener("click",(e)=>{
             }
         })
     }
+
+    
 })
 
 function addToOrderList(itemData){
@@ -96,5 +98,15 @@ function render(){
         pizzaList.innerHTML=listHtml
 
 }
+
+document.getElementById("border-btn").addEventListener("click",(e)=>{
+    console.log(document.getElementsByClassName("show-confirm-form"))
+    document.getElementsByClassName("show-confirm-form").map((element)=>{
+        console.log(element.classList);
+        element.classList.toggle("show-confirm-form")
+    })
+})
+
+
 
 render()

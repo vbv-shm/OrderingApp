@@ -1,27 +1,43 @@
 body{
     margin:0px;
 }
-/* #external{
-
-} */
+#external{
+    margin: auto;
+    border: solid 1px;
+    width:500px;
+    height:98vh;
+    /* padding: 2px; */
+}
 #header{
     width:500px;
-    height:120px;
+    height:130px;
     background-image: url("burger.jpg");
     background-size: 100% 100%;
     margin: auto;
+    
 }
 #header-text{
     color: #ffffff;
     font-weight: 600;
+    position: relative;
     padding: 20px;
     font-size: 40px;
+    left: 100px;
+    top:-15px;
+    text-shadow: 2px 2px 5px rgb(247, 148, 26);
+    
 }
 #header-text2{
-    color: aliceblue;
+    color: rgb(255, 248, 232);
     padding: 20px;
+    position: relative;
     padding-top: 0px;
     font-size: 20px;
+    left: 100px;
+    top:-35px;
+    font-weight: 600;
+    text-shadow: 0.5px 1px 2px rgb(238, 246, 3);
+    
 }
 .parent-list{
     display: flex;
@@ -60,9 +76,11 @@ body{
     border-radius: 50%;
     border-width: 1px;
     margin-top: 5px;
+    
 }
 .list-add-btn:hover{
     background-color: rgb(248, 247, 154);
+    cursor: pointer;
 }
 .item1{
     font-weight: 1000;
@@ -81,7 +99,7 @@ body{
 #order-cart{  
     width:500px;
     /* text-align: center; */
-    margin-left: 70px;
+    margin-left: 50px;
     display: none;
     font-weight: 600;
     font-size: large;
@@ -98,8 +116,9 @@ body{
     justify-content: space-between;
 }
 #order-heading{
-    padding-left: 130px;
+    padding-left: 150px;
     margin-bottom: 10px;
+    font-size: large;
     
 }
 #total-price{
@@ -115,7 +134,7 @@ body{
     background-color: rgb(101, 231, 101);
     color: #ffffff;
     border-width: 0px;
-    margin-left: -20px;
+    margin-left: -0px;
     font-size: 16px;
     margin-top: 10px;
 }
@@ -125,4 +144,51 @@ body{
     color: blue;
     left:402px;
     top:-13px
+}
+.remove-btn:hover{
+    cursor: pointer;
+}
+
+#confirm-order-form{
+    position: absolute;
+    top:20vh;
+    left: 40%;
+    right:50%;
+    background-color: rgb(133, 48, 9);
+    width:240px;
+    height: 300px;
+    padding: 30px;
+    color: #ffffff;
+    border-radius: 20px;
+}
+input{
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 20px;
+    width: 220px;
+}
+.confirm-btn{
+    margin-top: 30px;
+    margin-right: 10px;
+    /* margin: auto; */
+    border-radius: 10px;
+    padding: 2px;
+    width: 107px;
+    color: #ffffff;
+    background-color: red;
+}
+#confirm-btn{
+    background-color: green;  
+}
+#confirm-screen-background{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background-color: orange;
+    opacity: 20%;
+}
+.show-confirm-form{
+    display: none;
 }

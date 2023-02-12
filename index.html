@@ -9,12 +9,14 @@
     <script type="module" src="index.js" ></script>
 </head>
 <body>
+    <div id="confirm-screen-background" class="show-confirm-form"></div>
     <div id="external">
         <div id="header">
             <div id="header-text">Jimmy's Dinner</div>
             <div id="header-text2">
                 Best Burger and Pizza in town.
             </div>
+        </div>
             <div id="pizza-list">
             </div>
             <div id="order-cart">
@@ -24,11 +26,20 @@
                     <div id="total-price"></div>
                 </div>
                 <button id="border-btn">Complete Order</button>
-            </div>
-        </div>
-
+            
     </div>
-    
+    <div  class="show-confirm-form">
+        
+        <form>
+            <h2>Confirm your order</h2>
+            <label for="name">Name:</label>
+            <input id="name" type="text" required/>
+            <label>Email:</label>
+            <input id="email" type="email" required/>
+            <button id="confirm-btn" class="confirm-btn"> Confirm Buy</button>
+            <button class="confirm-btn">Cancel</button>
+        </form>
+    </div>
 </body>
     
 </html>
